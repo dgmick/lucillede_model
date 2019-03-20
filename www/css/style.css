@@ -10,6 +10,20 @@ html, body, .container{
     height:100%;
 }
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #020202 !important;
+}
+
+.model-tittle {
+    font-family:"Edition", sans-serif;
+    text-align: center;
+    font-size:2em;
+    letter-spacing: 10px;
+}
+
 h1, h2, h3, h4{
     font-family:"Edition", sans-serif;
 }
@@ -24,7 +38,7 @@ p, a, li, ul{
 
 .intro_model{
     font-size:2em;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
 
 }
 .navbar{
@@ -68,6 +82,16 @@ p, a, li, ul{
 .home_gallerie .col-md-4{
     padding:0 70px 0 70px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    margin-bottom: 5em;
+}
+
 .img-center{
     float:left;
 }
@@ -96,4 +120,39 @@ p, a, li, ul{
 }
 .margin-top-small{
     margin-top: 100px;
+}
+
+.image-model {
+    opacity: 1;
+    display: block;
+    width: 25%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image-model {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgba(75, 76, 78, 0.81);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }

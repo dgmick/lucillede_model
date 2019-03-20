@@ -74,11 +74,10 @@
             <a class="navbar-brand" href="/"><img height="40" class="logoimg" src="img/logo.png"></a>
         </div>
         <ul class="nav navbar-nav nav-menu">
-            <li class="active"><a href="http://lucillede.com">MAIN BOARD</a></li>
+<!--            <li class="active"><a href="http://lucillede.com">MAIN BOARD</a></li>-->
+            <li class="active"><a href="index.php">MAIN BOARD</a></li>
             <li class="active"><a href="be-discovered.php">BE DISCOVERED</a></li>
             <li class="active"><a href="contact.php">CONTACT</a></li>
-            <!-- <li class="active"><a href="mailto:lucille@lucillede.com?subject=Be Discovered - Lucille Delabarre Agent&body=Hi, i'm talented | a model.%0D%0APlease describe yourselve here...">BE DISCOVERED</a></li>
-            <li class="active"><a href="mailto:lucille@lucillede.com?subject=Contact request - Lucille Delabarre Agent">CONTACT</a></li> -->
         </ul>
     </div>
 </nav>
