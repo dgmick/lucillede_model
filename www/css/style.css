@@ -1,0 +1,99 @@
+@font-face {
+    src: url("../font/gobold/gobold_regular.otf");
+    font-family: "Gobold";
+}
+@font-face {
+    src: url("../font/edition.ttf");
+    font-family: "Edition";
+}
+html, body, .container{
+    height:100%;
+}
+
+h1, h2, h3, h4{
+    font-family:"Edition", sans-serif;
+}
+p, a, li, ul{
+    font-family:"Edition", sans-serif;
+}
+.navbar-main li a{
+    color:black;
+    text-decoration-style: none;
+    font-size:2em;
+}
+
+.intro_model{
+    font-size:2em;
+    letter-spacing: 2px;
+
+}
+.navbar{
+    margin: 0 40px 0 40px;
+
+}
+.navbar-main ul li a:hover{
+    background: none;
+}.navbar-main a:hover{
+    background: none;
+}
+.navbar-header{
+    /*margin-bottom:40px;*/
+}
+.navbar-brand img{
+    image-rendering: -webkit-optimize-contrast;
+
+}
+.nav-menu{
+    margin-top: 20px;
+    float: right;
+}
+.model_nom{
+    padding-top:10px;
+    text-align: center;
+    font-size: 20px;
+}
+.model_nom{
+    color: black;
+    text-align:right;
+    font-size:2em;
+    text-decoration: none !important;
+}
+.home_gallerie {
+    margin-top:20px;
+}
+.home_gallerie a{
+
+    text-decoration: none !important;
+}
+.home_gallerie .col-md-4{
+    padding:0 70px 0 70px;
+}
+.img-center{
+    float:left;
+}
+.img-holder{
+    padding:0px;
+}
+.gallerie{
+    margin-top: 20px;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.flex-column{
+     flex-direction:column;
+}
+.three_max:nth-child(3n+1){
+    clear:left;
+}
+.model{
+    margin-bottom:20px;
+    /*height:calc(100% - 150px);*/
+}
+.model p{
+    margin-top:20%;
+}
+.margin-top-small{
+    margin-top: 100px;
+}
