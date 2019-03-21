@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23aeb992-12a4-477e-a632-0f04b5985cc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesage-webfont.3b8f19d0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesage-webfont.ed04ff62.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesage-webfont.f0ed893a.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesage-webfont.f130da59.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bold-webfont.49740eb0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bold-webfont.550f18b1.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bold-webfont.71bf43f0.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bold-webfont.7a82a0b8.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bolditalic-webfont.49c449d0.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bolditalic-webfont.7ff304c0.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bolditalic-webfont.cdf49435.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-bolditalic-webfont.eeb5d18e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-italic-webfont.3a5dd348.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-italic-webfont.54639e06.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-italic-webfont.c5c0002c.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-italic-webfont.e9db4696.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-webfont.5cb16a40.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-webfont.a58f9930.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-webfont.b52cc537.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssage-webfont.f226409f.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-italic-webfont.1226ed3c.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-italic-webfont.54e9a17d.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-italic-webfont.586d6e41.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-italic-webfont.b4574917.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-webfont.7e78b5ef.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-webfont.8435a36b.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-webfont.88880ba3.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssagelt-webfont.aa2fda96.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssageth-italic-webfont.089d3bbc.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssageth-italic-webfont.2c81e090.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssageth-italic-webfont.3b0c29a0.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/font/new/adellesanssageth-italic-webfont.9f7d360f.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/model.php" afterDir="false" />
-    </list>
+    <list default="true" id="23aeb992-12a4-477e-a632-0f04b5985cc9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.24658385">
+    <splitter split-orientation="horizontal" split-proportion="0.83913046">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/portfolio.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+                <state relative-caret-position="731">
+                  <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
                   <folding>
                     <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -61,7 +26,6 @@
                     <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#!!top" expanded="true" />
@@ -178,12 +142,6 @@
               <item name="projetPro" type="b2602c69:ProjectViewProjectNode" />
               <item name="projetPro" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projetPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projetPro" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="font" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -227,21 +185,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553073663722</updated>
-      <workItem from="1553073665149" duration="38877000" />
+      <workItem from="1553073665149" duration="41100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38877000" />
+    <option name="totallyTimeSpent" value="41100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="118" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14087513" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14087513" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.39454356" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.031479537" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -261,6 +219,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/www/model.php</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.bash_profile">
@@ -423,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/portfolio.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="731">
+          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -434,7 +403,6 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#!!top" expanded="true" />
