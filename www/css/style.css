@@ -6,6 +6,63 @@
     src: url("../font/edition.ttf");
     font-family: "Edition";
 }
+
+@font-face {
+    font-family: AdelleSAGE;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/new/adellesage-webfont.f0ed893a.woff2) format("woff2"), url(../font/new/adellesage-webfont.f130da59.woff) format("woff"), url(../font/new/adellesage-webfont.ed04ff62.eot) format("embedded-opentype"), url(../font/new/adellesage-webfont.3b8f19d0.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/new/adellesanssage-webfont.5cb16a40.woff2) format("woff2"), url(../font/new/adellesanssage-webfont.b52cc537.woff) format("woff"), url(../font/new/adellesanssage-webfont.f226409f.eot) format("embedded-opentype"), url(../font/new/adellesanssage-webfont.a58f9930.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 400;
+    font-style: italic;
+    src: url(../font/new/adellesanssage-italic-webfont.e9db4696.woff2) format("woff2"), url(../font/new/adellesanssage-italic-webfont.3a5dd348.woff) format("woff"), url(../font/new/adellesanssage-italic-webfont.c5c0002c.eot) format("embedded-opentype"), url(../font/new/adellesanssage-italic-webfont.54639e06.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../font/new/adellesanssage-bold-webfont.7a82a0b8.woff2) format("woff2"), url(../font/new/adellesanssage-bold-webfont.550f18b1.woff) format("woff"), url(../font/new/adellesanssage-bold-webfont.71bf43f0.eot) format("embedded-opentype"), url(../font/new/adellesanssage-bold-webfont.49740eb0.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 700;
+    font-style: italic;
+    src: url(../font/new/adellesanssage-bolditalic-webfont.7ff304c0.woff2) format("woff2"), url(../font/new/adellesanssage-bolditalic-webfont.49c449d0.woff) format("woff"), url(../font/new/adellesanssage-bolditalic-webfont.cdf49435.eot) format("embedded-opentype"), url(../font/new/adellesanssage-bolditalic-webfont.eeb5d18e.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 100;
+    font-style: italic;
+    src: url(../font/new/adellesanssageth-italic-webfont.9f7d360f.woff2) format("woff2"), url(../font/new/adellesanssageth-italic-webfont.2c81e090.woff) format("woff"), url(../font/new/adellesanssageth-italic-webfont.3b0c29a0.eot) format("embedded-opentype"), url(../font/new/adellesanssageth-italic-webfont.089d3bbc.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../font/new/adellesanssagelt-webfont.88880ba3.woff2) format("woff2"), url(../font/new/adellesanssagelt-webfont.7e78b5ef.woff) format("woff"), url(../font/new/adellesanssagelt-webfont.aa2fda96.eot) format("embedded-opentype"), url(../font/new/adellesanssagelt-webfont.8435a36b.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: AdelleSansSAGE;
+    font-weight: 300;
+    font-style: italic;
+    src: url(../font/new/adellesanssagelt-italic-webfont.54e9a17d.woff2) format("woff2"), url(../font/new/adellesanssagelt-italic-webfont.586d6e41.woff) format("woff"), url(../font/new/adellesanssagelt-italic-webfont.1226ed3c.eot) format("embedded-opentype"), url(../font/new/adellesanssagelt-italic-webfont.b4574917.ttf) format("truetype")
+}
+
 html, body, .container{
     height:100%;
 }
@@ -24,12 +81,21 @@ hr {
     letter-spacing: 10px;
 }
 
+.measurement_model {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: AdelleSAGE, Arial, sans-serif;
+}
+
 h1, h2, h3, h4{
     font-family:"Edition", sans-serif;
 }
-p, a, li, ul{
+
+p, li, ul{
     font-family:"Edition", sans-serif;
 }
+
 .navbar-main li a{
     color:black;
     text-decoration-style: none;
@@ -39,24 +105,22 @@ p, a, li, ul{
 .intro_model{
     font-size:2em;
     letter-spacing: 10px;
-
 }
+
 .navbar{
     margin: 0 40px 0 40px;
-
 }
+
 .navbar-main ul li a:hover{
     background: none;
 }.navbar-main a:hover{
     background: none;
 }
-.navbar-header{
-    /*margin-bottom:40px;*/
-}
+
 .navbar-brand img{
     image-rendering: -webkit-optimize-contrast;
-
 }
+
 .nav-menu{
     margin-top: 20px;
     float: right;
@@ -155,4 +219,104 @@ p, a, li, ul{
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+}
+
+.middle a {
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }

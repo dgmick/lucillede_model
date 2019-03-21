@@ -13,7 +13,7 @@ include('admin/includes/config.php');
     $row = $req->fetchAll();
 
     $row = $row[0];
-    if (isset($_GET['model'])) {
+    if (isset($name)) {
         echo '
             <br>
             <div class="row">';
@@ -22,15 +22,17 @@ include('admin/includes/config.php');
                 if ($i == 1) {
                     echo '<div class="model-tittle">'.$row['name'].'</div>';
                     echo '
-                        <hr width="50%" /><br>
+                        <hr width="50%"/>
 
                         <div class="col-md-10 col-md-offset-1 container"  id="model' . $i . '">                             
-                              <a href="portfolio.php?model='.$row['name'].'">
+                             
                               <img src="venum.png" class="img-responsive center image-model" alt="model">
                               <!--<img src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">-->
-                              </a>
+                              
                               <div class="middle">
-                              <div class="text">Portfolio de '.$row['name'].'</div>
+                            
+                              <a class="text" href="portfolio.php?model='.$row['name'].'">Portfolio de '.$row['name'].'</a>
+                              
                              </div>
                         </div>';
 
@@ -58,10 +60,5 @@ include('admin/includes/config.php');
     }
     ?>
 </div>
-</div>
 
 <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
