@@ -20,19 +20,19 @@ include('admin/includes/config.php');
         for ($i = 1; $i < 20; $i++) {
             if ($row['image' . $i] !== " ") {
                 if ($i == 1) {
-                    echo '<div class="model-tittle">'.$row['name'].'</div>';
+                    echo '<div class="model-tittle">' . $row['name'] . '</div>';
                     echo '
                         <hr width="50%"/>
 
-                        <div class="col-md-10 col-md-offset-1 container"  id="model' . $i . '">                             
-                             
+                        <div class="col-md-10 col-md-offset-1 container"  id="model' . $i . '">
+
                               <img src="venum.png" class="img-responsive center image-model" alt="model">
                               <!--<img src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">-->
-                              
+
                               <div class="middle">
-                            
-                              <a class="text" href="portfolio.php?model='.$row['name'].'">Portfolio de '.$row['name'].'</a>
-                              
+
+                              <a class="text" href="portfolio.php?model=' . $row['name'] . '">Portfolio de ' . $row['name'] . '</a>
+
                              </div>
                         </div>';
 
@@ -51,7 +51,10 @@ include('admin/includes/config.php');
                              <li>shoes: ' . $row['shoes'] . '</li>
                              </ul>
                         </div>
-                        </div>';
+                        </div><br>';
+
+                    echo '<div class="model-tittle">' . $row['name'] . ' Sur Instagram</div>';
+                    echo '<hr width="50%"/>';
 
                     echo ' </div>';
                 }

@@ -2,6 +2,7 @@
     src: url("../font/gobold/gobold_regular.otf");
     font-family: "Gobold";
 }
+
 @font-face {
     src: url("../font/edition.ttf");
     font-family: "Edition";
@@ -63,8 +64,8 @@
     src: url(../font/new/adellesanssagelt-italic-webfont.54e9a17d.woff2) format("woff2"), url(../font/new/adellesanssagelt-italic-webfont.586d6e41.woff) format("woff"), url(../font/new/adellesanssagelt-italic-webfont.1226ed3c.eot) format("embedded-opentype"), url(../font/new/adellesanssagelt-italic-webfont.b4574917.ttf) format("truetype")
 }
 
-html, body, .container{
-    height:100%;
+html, body, .container {
+    height: 100%;
 }
 
 hr {
@@ -75,9 +76,9 @@ hr {
 }
 
 .model-tittle {
-    font-family:"Edition", sans-serif;
+    font-family: "Edition", sans-serif;
     text-align: center;
-    font-size:2em;
+    font-size: 2em;
     letter-spacing: 10px;
 }
 
@@ -88,63 +89,70 @@ hr {
     font-family: AdelleSAGE, Arial, sans-serif;
 }
 
-h1, h2, h3, h4{
-    font-family:"Edition", sans-serif;
+h1, h2, h3, h4 {
+    font-family: "Edition", sans-serif;
 }
 
-p, li, ul{
-    font-family:"Edition", sans-serif;
+p, li, ul {
+    font-family: "Edition", sans-serif;
 }
 
-.navbar-main li a{
-    color:black;
+.navbar-main li a {
+    color: black;
     text-decoration-style: none;
-    font-size:2em;
+    font-size: 2em;
 }
 
-.intro_model{
-    font-size:2em;
+.intro_model {
+    font-size: 2em;
     letter-spacing: 10px;
 }
 
-.navbar{
+.navbar {
     margin: 0 40px 0 40px;
 }
 
-.navbar-main ul li a:hover{
-    background: none;
-}.navbar-main a:hover{
+.navbar-main ul li a:hover {
     background: none;
 }
 
-.navbar-brand img{
+.navbar-main a:hover {
+    background: none;
+}
+
+.navbar-brand img {
     image-rendering: -webkit-optimize-contrast;
 }
 
-.nav-menu{
+.nav-menu {
     margin-top: 20px;
     float: right;
 }
-.model_nom{
-    padding-top:10px;
+
+.model_nom {
+    padding-top: 10px;
     text-align: center;
     font-size: 20px;
 }
-.model_nom{
+
+.model_nom {
     color: black;
-    text-align:right;
-    font-size:2em;
+    text-align: right;
+    font-size: 2em;
     text-decoration: none !important;
 }
+
 .home_gallerie {
-    margin-top:20px;
+    margin-top: 20px;
 }
-.home_gallerie a{
+
+.home_gallerie a {
 
     text-decoration: none !important;
 }
-.home_gallerie .col-md-4{
-    padding:0 70px 0 70px;
+
+.home_gallerie .col-md-4 {
+    padding: 0 70px 0 70px;
 }
 
 .center {
@@ -156,33 +164,42 @@ p, li, ul{
     margin-bottom: 5em;
 }
 
-.img-center{
-    float:left;
+.img-center {
+    float: left;
 }
-.img-holder{
-    padding:0px;
+
+.img-holder {
+    padding: 0px;
 }
-.gallerie{
+
+.gallerie {
     margin-top: 20px;
 }
-.flex-center{
+
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
-}.flex-column{
-     flex-direction:column;
 }
-.three_max:nth-child(3n+1){
-    clear:left;
+
+.flex-column {
+    flex-direction: column;
 }
-.model{
-    margin-bottom:20px;
+
+.three_max:nth-child(3n+1) {
+    clear: left;
+}
+
+.model {
+    margin-bottom: 20px;
     /*height:calc(100% - 150px);*/
 }
-.model p{
-    margin-top:20%;
+
+.model p {
+    margin-top: 20%;
 }
-.margin-top-small{
+
+.margin-top-small {
     margin-top: 100px;
 }
 
@@ -226,7 +243,7 @@ p, li, ul{
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 6px;
     margin: 10px;
@@ -234,14 +251,10 @@ p, li, ul{
 
 
 
-* {
-    box-sizing: border-box;
-}
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-}
+
+
+/* PORTFOLIO*/
 
 /* Hide the images by default */
 .mySlides {
@@ -281,16 +294,6 @@ p, li, ul{
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 /* Container for image text */
 .caption-container {
     text-align: center;
@@ -320,3 +323,7 @@ p, li, ul{
 .demo:hover {
     opacity: 1;
 }
+
+
+
+/***/
