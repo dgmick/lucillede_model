@@ -26,6 +26,20 @@ SET time_zone = "+00:00";
 -- Structure de la table `posts`
 --
 
+CREATE TABLE `news` (
+ `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `user_id` int(11) DEFAULT NULL,
+  `titre` varchar(25) NOT NULL,
+  `date` date NOT NULL,
+  `commentaire` text NOT NULL,
+  `photo` varchar(255),
+  FOREIGN KEY (`user_id`) REFERENCES `2017lucillede_models` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Structure de la table `posts`
+--
+
 CREATE TABLE `posts` (
   `id` int(11) unsigned NOT NULL,
   `title` varchar(40) DEFAULT NULL,
@@ -83,6 +97,10 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées

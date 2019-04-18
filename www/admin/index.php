@@ -8,26 +8,18 @@ include("includes/config.php");
 include("includes/start.php");
 
 // Container blanc dans lequel se trouve le formulaire
-echo'<div class="container">';
-if ($id!=0){
+echo '<div class="container">';
+if ($id != 0) {
 //    erreur(ERR_IS_CO);
 //    Si on est connecté, redirection vers dashboard
-    echo'<script>window.location.href = "dashboard.php";</script>';
+    echo '<script>window.location.href = "dashboard.php";</script>';
 }
-
-
 
 if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
 {
-
     $req = $db->prepare('SELECT * FROM 2017lucillede_users');
-
     $req->execute();
-
     $row = $req->fetchAll();
-//    var_dump($row);
-
-
     echo '
     <h1>Site lucillede.com</h1>
     <form method="post" action="index.php">
@@ -39,47 +31,40 @@ if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
 	<p class="connect-submit"><input type="submit" value="Connexion" /></p>
 	</form>	 
 	</div>
-	
-
-	
 	<div class="container">';
     echo '<small class="align-left">Dernier fichier envoyé :)</small>';
 
     $last_post = end($row);
 
-            echo '<h2>'.$last_post['title'].'</h2><p class="align-left">'.$last_post['description'].'</p>';
+    echo '<h2>' . $last_post['title'] . '</h2><p class="align-left">' . $last_post['description'] . '</p>';
 
-	echo'
+    echo '
 	</div>
 	
 	</div>
 	</body>
 	</html>';
-}
-
-else
-{
-    $message='';
-    if (empty($_POST['pseudo']) || empty($_POST['password']) ) //Oublie d'un champ
+} else {
+    $message = '';
+    if (empty($_POST['pseudo']) || empty($_POST['password'])) //Oublie d'un champ
     {
         $message = '<p>une erreur s\'est produite pendant votre identification.
 	Vous devez remplir tous les champs</p>
 	<p>Cliquez <a href="./index.php">ici</a> pour revenir</p>';
-    }
-    else //On check le mot de passe
+    } else //On check le mot de passe
     {
-        $query=$db->prepare('SELECT id, useradmin, password FROM 2017lucillede_users WHERE useradmin = :pseudo');
-        $query->bindValue(':pseudo',$_POST['pseudo'], PDO::PARAM_STR);
+        $query = $db->prepare('SELECT id, useradmin, password FROM 2017lucillede_users WHERE useradmin = :pseudo');
+        $query->bindValue(':pseudo', $_POST['pseudo'], PDO::PARAM_STR);
         $query->execute();
-        $data=$query->fetch();
+        $data = $query->fetch();
         if ($data['password'] == md5($_POST['password'])) // Acces OK !
         {
             $_SESSION['pseudo'] = $data['useradmin'];
             $_SESSION['id'] = $data['id'];
-            $message = 'Bienvenue '.$data['useradmin'].', vous êtes maintenant connecté.</p>
+            $message = 'Bienvenue ' . $data['useradmin'] . ', vous êtes maintenant connecté.</p>
 			<p>Vous allez être redirigé vers la page d\'administration !</p>
 			<img src=http://i.giphy.com/41KuZ0xnx7Bde.gif" height="50">';
-            echo'<script>
+            echo '<script>
                     window.setTimeout(function(){
                     
                             // Move to a new location or you can do something else
@@ -87,10 +72,7 @@ else
                     
                         }, 2000);                
                     </script>';
-
-
-        }
-        else // Acces pas OK !
+        } else // Acces pas OK !
         {
             $message = '<p>Une erreur s\'est produite 
 	    pendant votre identification.<br /> Le mot de passe ou le pseudo 
@@ -102,11 +84,8 @@ else
         $query->CloseCursor();
     }
 
-    echo $message.'</div></body></html>';
+    echo $message . '</div></body></html>';
     header("Location:dashboard.php");
     exit;
 }
-
-
-
 ?>

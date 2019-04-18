@@ -269,7 +269,7 @@ $single_page_creation = RevSliderFunctions::getVal($glob_vals, "single_page_crea
 			<h3><i class="pe-7s-folder"></i><?php _e('Terms of Using JPG Objects from the Object Library', 'revslider'); ?></h3>
 			<ul>
 				<li><?php _e('The pictures are free for personal and even for commercial use.', 'revslider'); ?></li>
-				<li><?php _e('You can modify, copy and distribute the photos. All without asking for permission or setting a link to the source. So, attribution is not required.', 'revslider'); ?></li>
+				<li><?php _e('You can modify, copy and distribute the photosdd. All without asking for permission or setting a link to the source. So, attribution is not required.', 'revslider'); ?></li>
 				<li><?php _e('The only restriction is that identifiable people may not appear in a bad light or in a way that they may find offensive, unless they give their consent.', 'revslider'); ?></li>
 				<li><?php _e('The CC0 license was released by the non-profit organization Creative Commons (CC). Get more information about Creative Commons images and the license on the official license page.', 'revslider'); ?></li>				
 				<li><?php _e('<a target="_blank" class="rspb_darklink" href="http://allthefreestock.com/">All The Freestock</a> under the License <a target="_blank" class="rspb_darklink" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 Creative Commons</a>', 'revslider'); ?></li>

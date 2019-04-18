@@ -254,7 +254,7 @@ function sb_instagram_custom_css() {
     
     isset($options[ 'sb_instagram_custom_css' ]) ? $sb_instagram_custom_css = trim($options['sb_instagram_custom_css']) : $sb_instagram_custom_css = '';
 
-    //Show CSS if an admin (so can see Hide Photos link), if including Custom CSS or if hiding some photos
+    //Show CSS if an admin (so can see Hide Photos link), if including Custom CSS or if hiding some photosdd
     ( current_user_can( 'manage_options' ) || !empty($sb_instagram_custom_css) ) ? $sbi_show_css = true : $sbi_show_css = false;
 
     if( $sbi_show_css ) echo '<!-- Instagram Feed CSS -->';

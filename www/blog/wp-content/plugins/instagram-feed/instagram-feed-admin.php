@@ -143,7 +143,7 @@ function sb_instagram_settings_page() {
 
                 $sb_instagram_height_unit = sanitize_text_field( $_POST[ 'sb_instagram_height_unit' ] );
 
-                //Validate and sanitize number of photos field
+                //Validate and sanitize number of photosdd field
                 $safe_num = intval( sanitize_text_field( $_POST['sb_instagram_num'] ) );
                 if ( ! $safe_num ) $safe_num = '';
                 if ( strlen( $safe_num ) > 4 ) $safe_num = substr( $safe_num, 0, 4 );
@@ -257,7 +257,7 @@ function sb_instagram_settings_page() {
                         <td>
                             <input name="sb_instagram_at" id="sb_instagram_at" type="text" value="<?php esc_attr_e( $sb_instagram_at, 'instagram-feed' ); ?>" size="60" maxlength="60" placeholder="Click button above to get your Access Token" />
                             &nbsp;<a class="sbi_tooltip_link" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("In order to display your photos you need an Access Token from Instagram. To get yours, simply click the button above and log into Instagram. You can also use the button on <a href='https://smashballoon.com/instagram-feed/token/' target='_blank'>this page</a>.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("In order to display your photosdd you need an Access Token from Instagram. To get yours, simply click the button above and log into Instagram. You can also use the button on <a href='https://smashballoon.com/instagram-feed/token/' target='_blank'>this page</a>.", 'instagram-feed'); ?></p>
                         </td>
                     </tr>
 
@@ -272,7 +272,7 @@ function sb_instagram_settings_page() {
                                 <label class="sbi_radio_label" for="sb_instagram_type_user">User ID(s):</label>
                                 <input name="sb_instagram_user_id" id="sb_instagram_user_id" type="text" value="<?php esc_attr_e( $sb_instagram_user_id, 'instagram-feed' ); ?>" size="25" />
                                 &nbsp;<a class="sbi_tooltip_link" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                                <p class="sbi_tooltip"><?php _e("These are the IDs of the Instagram accounts you want to display photos from. To get your ID simply click on the button above and log into Instagram.<br /><br />You can also display photos from other peoples Instagram accounts. To find their User ID you can use <a href='https://smashballoon.com/instagram-feed/find-instagram-user-id/' target='_blank'>this tool</a>. You can separate multiple IDs using commas.", 'instagram-feed'); ?></p><br />
+                                <p class="sbi_tooltip"><?php _e("These are the IDs of the Instagram accounts you want to display photosdd from. To get your ID simply click on the button above and log into Instagram.<br /><br />You can also display photosdd from other peoples Instagram accounts. To find their User ID you can use <a href='https://smashballoon.com/instagram-feed/find-instagram-user-id/' target='_blank'>this tool</a>. You can separate multiple IDs using commas.", 'instagram-feed'); ?></p><br />
                             </span>
 
                             <div class="sbi_notice sbi_user_id_error">
@@ -430,9 +430,9 @@ function sb_instagram_settings_page() {
                         Eg: num=6</code></th>
                     <td>
                         <input name="sb_instagram_num" type="text" value="<?php esc_attr_e( $sb_instagram_num, 'instagram-feed' ); ?>" size="4" maxlength="4" />
-                        <span class="sbi_note"><?php _e('Number of photos to show initially. Maximum of 33.', 'instagram-feed'); ?></span>
+                        <span class="sbi_note"><?php _e('Number of photosdd to show initially. Maximum of 33.', 'instagram-feed'); ?></span>
                         &nbsp;<a class="sbi_tooltip_link" href="JavaScript:void(0);"><?php _e("Using multiple IDs or hashtags?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("If you're displaying photos from multiple User IDs or hashtags then this is the number of photos which will be displayed from each.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("If you're displaying photosdd from multiple User IDs or hashtags then this is the number of photosdd which will be displayed from each.", 'instagram-feed'); ?></p>
                     </td>
                 </tr>
                 <tr valign="top">
@@ -621,24 +621,24 @@ function sb_instagram_settings_page() {
         <table class="form-table">
             <tbody>
                 <tr valign="top" class="sbi_pro">
-                    <th scope="row"><label><?php _e('Remove photos containing these words or hashtags', 'instagram-feed'); ?></label></th>
+                    <th scope="row"><label><?php _e('Remove photosdd containing these words or hashtags', 'instagram-feed'); ?></label></th>
                     <td>
                        <input disabled name="sb_instagram_exclude_words" id="sb_instagram_exclude_words" type="text" style="width: 70%;" value="" />
                         <br />
                         <span class="sbi_note" style="margin-left: 0;"><?php _e('Separate words/hashtags using commas', 'instagram-feed'); ?></span>
                         &nbsp;<a class="sbi_tooltip_link sbi_pro" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("You can use this setting to remove photos which contain certain words or hashtags in the caption. Separate multiple words or hashtags using commas.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("You can use this setting to remove photosdd which contain certain words or hashtags in the caption. Separate multiple words or hashtags using commas.", 'instagram-feed'); ?></p>
                     </td>
                 </tr>
 
                 <tr valign="top" class="sbi_pro">
-                    <th scope="row"><label><?php _e('Show photos containing these words or hashtags', 'instagram-feed'); ?></label></th>
+                    <th scope="row"><label><?php _e('Show photosdd containing these words or hashtags', 'instagram-feed'); ?></label></th>
                     <td>
                         <input disabled name="sb_instagram_include_words" id="sb_instagram_include_words" type="text" style="width: 70%;" value="" />
                         <br />
                         <span class="sbi_note" style="margin-left: 0;"><?php _e('Separate words/hashtags using commas', 'instagram-feed'); ?></span>
                         &nbsp;<a class="sbi_tooltip_link sbi_pro" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("You can use this setting to only show photos which contain certain words or hashtags in the caption. For example, adding <code>sheep, cow, dog</code> will show any photos which contain either the word sheep, cow, or dog. Separate multiple words or hashtags using commas.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("You can use this setting to only show photosdd which contain certain words or hashtags in the caption. For example, adding <code>sheep, cow, dog</code> will show any photosdd which contain either the word sheep, cow, or dog. Separate multiple words or hashtags using commas.", 'instagram-feed'); ?></p>
                     </td>
                 </tr>
             </tbody>
@@ -651,13 +651,13 @@ function sb_instagram_settings_page() {
         <table class="form-table">
             <tbody>
                 <tr valign="top" class="sbi_pro">
-                    <th scope="row"><label><?php _e('Hide specific photos', 'instagram-feed'); ?></label></th>
+                    <th scope="row"><label><?php _e('Hide specific photosdd', 'instagram-feed'); ?></label></th>
                     <td>
                         <textarea disabled name="sb_instagram_hide_photos" id="sb_instagram_hide_photos" style="width: 70%;" rows="3"></textarea>
                         <br />
                         <span class="sbi_note" style="margin-left: 0;"><?php _e('Separate IDs using commas', 'instagram-feed'); ?></span>
                         &nbsp;<a class="sbi_tooltip_link sbi_pro" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("You can use this setting to hide specific photos in your feed. Just click the 'Hide Photo' link in the photo pop-up in your feed to get the ID of the photo, then copy and paste it into this text box.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("You can use this setting to hide specific photosdd in your feed. Just click the 'Hide Photo' link in the photo pop-up in your feed to get the ID of the photo, then copy and paste it into this text box.", 'instagram-feed'); ?></p>
                     </td>
                 </tr>
 
@@ -668,7 +668,7 @@ function sb_instagram_settings_page() {
                         <br />
                         <span class="sbi_note" style="margin-left: 0;"><?php _e('Separate usernames using commas', 'instagram-feed'); ?></span>
                         &nbsp;<a class="sbi_tooltip_link sbi_pro" href="JavaScript:void(0);"><?php _e("What is this?", 'instagram-feed'); ?></a>
-                            <p class="sbi_tooltip"><?php _e("You can use this setting to block photos from certain users in your feed. Just enter the usernames here which you want to block. Separate multiple usernames using commas.", 'instagram-feed'); ?></p>
+                            <p class="sbi_tooltip"><?php _e("You can use this setting to block photosdd from certain users in your feed. Just enter the usernames here which you want to block. Separate multiple usernames using commas.", 'instagram-feed'); ?></p>
                     </td>
                 </tr>
 
@@ -758,7 +758,7 @@ function sb_instagram_settings_page() {
                 <tr class="sbi_table_header"><td colspan=3><?php _e("Configure Options", 'instagram-feed'); ?></td></tr>
                 <tr class="sbi_pro">
                     <td>type</td>
-                    <td><?php _e("Display photos from a User ID (user)<br />Display posts from a Hashtag (hashtag)<br />Display posts from a Location (location)<br />Display posts from Coordinates (coordinates)", 'instagram-feed'); ?></td>
+                    <td><?php _e("Display photosdd from a User ID (user)<br />Display posts from a Hashtag (hashtag)<br />Display posts from a Location (location)<br />Display posts from Coordinates (coordinates)", 'instagram-feed'); ?></td>
                     <td><code>[instagram-feed type=user]</code><br /><code>[instagram-feed type=hashtag]</code><br/><code>[instagram-feed type=location]</code><br /><code>[instagram-feed type=coordinates]</code></td>
                 </tr>
                 <tr>
@@ -778,7 +778,7 @@ function sb_instagram_settings_page() {
                 </tr>
                 <tr class="sbi_pro">
                     <td>coordinates</td>
-                    <td><?php _e('The coordinates to display photos from. Separate multiple sets of coordinates by commas.<br />The format is (latitude,longitude,distance).', 'instagram-feed'); ?></td>
+                    <td><?php _e('The coordinates to display photosdd from. Separate multiple sets of coordinates by commas.<br />The format is (latitude,longitude,distance).', 'instagram-feed'); ?></td>
                     <td><code>[instagram-feed coordinates="(25.76,-80.19,500)"]</code></td>
                 </tr>
 
@@ -822,7 +822,7 @@ function sb_instagram_settings_page() {
                 </tr>
                 <tr>
                     <td>num</td>
-                    <td><?php _e("The number of photos to display initially. Maximum is 33.", 'instagram-feed'); ?></td>
+                    <td><?php _e("The number of photosdd to display initially. Maximum is 33.", 'instagram-feed'); ?></td>
                     <td><code>[instagram-feed num=10]</code></td>
                 </tr>
                 <tr>
@@ -832,12 +832,12 @@ function sb_instagram_settings_page() {
                 </tr>
                 <tr>
                     <td>imageres</td>
-                    <td><?php _e("The resolution/size of the photos. 'auto', full', 'medium' or 'thumb'.", 'instagram-feed'); ?></td>
+                    <td><?php _e("The resolution/size of the photosdd. 'auto', full', 'medium' or 'thumb'.", 'instagram-feed'); ?></td>
                     <td><code>[instagram-feed imageres=full]</code></td>
                 </tr>
                 <tr>
                     <td>imagepadding</td>
-                    <td><?php _e("The spacing around your photos", 'instagram-feed'); ?></td>
+                    <td><?php _e("The spacing around your photosdd", 'instagram-feed'); ?></td>
                     <td><code>[instagram-feed imagepadding=10]</code></td>
                 </tr>
                 <tr>

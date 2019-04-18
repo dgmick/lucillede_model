@@ -62,7 +62,7 @@ class RevSliderFacebook {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $user_id 	Facebook User id (not name)
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_photo_sets($user_id,$item_count=10,$app_id,$app_secret){
 		//photoset params
@@ -83,11 +83,11 @@ class RevSliderFacebook {
 	 *
 	 * @since    5.1.1 
 	 * @param    string    $photo_set_id 	Photoset ID
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_photo_set_photos($photo_set_id,$item_count=10,$app_id,$app_secret){
     $oauth = wp_remote_fopen("https://graph.facebook.com/oauth/access_token?type=client_cred&client_id=".$app_id."&client_secret=".$app_secret);
-    $url = "https://graph.facebook.com/$photo_set_id/photos?fields=photos&".$oauth."&fields=id,from,message,picture,link,name,icon,privacy,type,status_type,object_id,application,created_time,updated_time,is_hidden,is_expired,comments.limit(1).summary(true),likes.limit(1).summary(true)";
+    $url = "https://graph.facebook.com/$photo_set_id/photosdd?fields=photosdd&".$oauth."&fields=id,from,message,picture,link,name,icon,privacy,type,status_type,object_id,application,created_time,updated_time,is_hidden,is_expired,comments.limit(1).summary(true),likes.limit(1).summary(true)";
 
 		$transient_name = 'revslider_' . md5($url);
 
@@ -113,7 +113,7 @@ class RevSliderFacebook {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $user_url 	Facebook User id (not name)
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_photo_set_photos_options($user_url,$current_album,$app_id,$app_secret,$item_count=99){
 		$user_id = $this->get_user_from_url($user_url);
@@ -733,10 +733,10 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $user_id 	flicker User id (not name)
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_public_photos($user_id,$item_count=10){
-		//public photos params
+		//public photosdd params
 		$public_photo_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.people.getPublicPhotos',
   			'user_id' => $user_id,
@@ -758,7 +758,7 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $user_id 	flicker User id (not name)
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_photo_sets($user_id,$item_count=10,$current_photoset){
 		//photoset params
@@ -776,7 +776,7 @@ class RevSliderFlickr {
 		foreach($photo_sets_list->photosets->photoset as $photo_set){
 			if(empty($photo_set->title->_content)) $photo_set->title->_content = "";
 			if(empty($photo_set->photos))  $photo_set->photos = 0;
-			$return[] = '<option title="'.$photo_set->description->_content.'" '.selected( $photo_set->id , $current_photoset , false ).' value="'.$photo_set->id.'">'.$photo_set->title->_content.' ('.$photo_set->photos.' photos)</option>"';
+			$return[] = '<option title="'.$photo_set->description->_content.'" '.selected( $photo_set->id , $current_photoset , false ).' value="'.$photo_set->id.'">'.$photo_set->title->_content.' ('.$photo_set->photos.' photosdd)</option>"';
 		}
 		return $return;
 	}
@@ -786,10 +786,10 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $photo_set_id 	Photoset ID
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_photo_set_photos($photo_set_id,$item_count=10){
-		//photoset photos params
+		//photoset photosdd params
 		$this->stream = array();
 		$photo_set_params = $this->api_param_defaults + array(
 			'method'  		=> 'flickr.photosets.getPhotos',
@@ -811,10 +811,10 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $group_id 	Photoset ID
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_group_photos($group_id,$item_count=10){
-		//photoset photos params
+		//photoset photosdd params
 		$group_pool_params = $this->api_param_defaults + array(
 			'method'  		=> 'flickr.groups.pools.getPhotos',
   			'group_id' 	=> $group_id,
@@ -836,7 +836,7 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $gallery_url URL of the Gallery
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_gallery_from_url($gallery_url){
 		//gallery params
@@ -857,10 +857,10 @@ class RevSliderFlickr {
 	 *
 	 * @since    1.0.0
 	 * @param    string    $gallery_id 	flicker Gallery id (not name)
-	 * @param    int       $item_count 	number of photos to pull
+	 * @param    int       $item_count 	number of photosdd to pull
 	 */
 	public function get_gallery_photos($gallery_id,$item_count=10){
-		//gallery photos params
+		//gallery photosdd params
 		$gallery_photo_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.galleries.getPhotos',
   			'gallery_id' => $gallery_id,

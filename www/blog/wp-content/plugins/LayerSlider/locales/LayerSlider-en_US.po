@@ -3954,7 +3954,7 @@ msgstr ""
 
 #: templates/tmpl-transition-window.php:69
 msgid ""
-"Share your gorgeous photos with the world or your loved ones in a truly "
+"Share your gorgeous photosdd with the world or your loved ones in a truly "
 "inspirational way and create sliders with stunning effects with Origami."
 msgstr ""
 

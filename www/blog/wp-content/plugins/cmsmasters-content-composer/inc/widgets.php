@@ -487,7 +487,7 @@ class WP_Widget_Custom_Flickr extends WP_Widget {
 				'<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=' . $number . '&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=' . $user . '"></script>' . 
 			'</div>' . 
 			'<div class="cl"></div>' . 
-			'<a href="http://www.flickr.com/photos/' . $user . '" class="more_button" target="_blank"><span>' . esc_html__('More flickr images', 'cmsmasters_content_composer') . '</span></a>' . 
+			'<a href="http://www.flickr.com/photosdd/' . $user . '" class="more_button" target="_blank"><span>' . esc_html__('More flickr images', 'cmsmasters_content_composer') . '</span></a>' . 
 			'</div>' . 
 		$after_widget;
 	}

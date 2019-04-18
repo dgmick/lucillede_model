@@ -3950,8 +3950,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:113 ..
 #: /admin/views/templates/slider-main-options.php:134
-msgid "Display this number of photos"
-msgstr "Afficher ce nombre de photos"
+msgid "Display this number of photosdd"
+msgstr "Afficher ce nombre de photosdd"
 
 #: ../admin/views/templates/slider-main-options.php:115 ..
 #: /admin/views/templates/slider-main-options.php:251
@@ -4002,7 +4002,7 @@ msgid ""
 msgstr "Comment recevoir votre clé API Flickr"
 
 #: ../admin/views/templates/slider-main-options.php:144
-msgid "Display a user's public photos"
+msgid "Display a user's public photosdd"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:144
@@ -4022,7 +4022,7 @@ msgid "Display a gallery"
 msgstr "Afficher une galerie"
 
 #: ../admin/views/templates/slider-main-options.php:147
-msgid "Display a group's photos"
+msgid "Display a group's photosdd"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:147

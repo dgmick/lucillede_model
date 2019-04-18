@@ -8,65 +8,73 @@
     font-family: "Edition";
 }
 
-@font-face {
-    font-family: AdelleSAGE;
-    font-weight: 400;
-    font-style: normal;
-    src: url(../font/new/adellesage-webfont.f0ed893a.woff2) format("woff2"), url(../font/new/adellesage-webfont.f130da59.woff) format("woff"), url(../font/new/adellesage-webfont.ed04ff62.eot) format("embedded-opentype"), url(../font/new/adellesage-webfont.3b8f19d0.ttf) format("truetype")
+
+
+
+* {
+    box-sizing: border-box;
 }
 
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 400;
-    font-style: normal;
-    src: url(../font/new/adellesanssage-webfont.5cb16a40.woff2) format("woff2"), url(../font/new/adellesanssage-webfont.b52cc537.woff) format("woff"), url(../font/new/adellesanssage-webfont.f226409f.eot) format("embedded-opentype"), url(../font/new/adellesanssage-webfont.a58f9930.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 400;
-    font-style: italic;
-    src: url(../font/new/adellesanssage-italic-webfont.e9db4696.woff2) format("woff2"), url(../font/new/adellesanssage-italic-webfont.3a5dd348.woff) format("woff"), url(../font/new/adellesanssage-italic-webfont.c5c0002c.eot) format("embedded-opentype"), url(../font/new/adellesanssage-italic-webfont.54639e06.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 700;
-    font-style: normal;
-    src: url(../font/new/adellesanssage-bold-webfont.7a82a0b8.woff2) format("woff2"), url(../font/new/adellesanssage-bold-webfont.550f18b1.woff) format("woff"), url(../font/new/adellesanssage-bold-webfont.71bf43f0.eot) format("embedded-opentype"), url(../font/new/adellesanssage-bold-webfont.49740eb0.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 700;
-    font-style: italic;
-    src: url(../font/new/adellesanssage-bolditalic-webfont.7ff304c0.woff2) format("woff2"), url(../font/new/adellesanssage-bolditalic-webfont.49c449d0.woff) format("woff"), url(../font/new/adellesanssage-bolditalic-webfont.cdf49435.eot) format("embedded-opentype"), url(../font/new/adellesanssage-bolditalic-webfont.eeb5d18e.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 100;
-    font-style: italic;
-    src: url(../font/new/adellesanssageth-italic-webfont.9f7d360f.woff2) format("woff2"), url(../font/new/adellesanssageth-italic-webfont.2c81e090.woff) format("woff"), url(../font/new/adellesanssageth-italic-webfont.3b0c29a0.eot) format("embedded-opentype"), url(../font/new/adellesanssageth-italic-webfont.089d3bbc.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 300;
-    font-style: normal;
-    src: url(../font/new/adellesanssagelt-webfont.88880ba3.woff2) format("woff2"), url(../font/new/adellesanssagelt-webfont.7e78b5ef.woff) format("woff"), url(../font/new/adellesanssagelt-webfont.aa2fda96.eot) format("embedded-opentype"), url(../font/new/adellesanssagelt-webfont.8435a36b.ttf) format("truetype")
-}
-
-@font-face {
-    font-family: AdelleSansSAGE;
-    font-weight: 300;
-    font-style: italic;
-    src: url(../font/new/adellesanssagelt-italic-webfont.54e9a17d.woff2) format("woff2"), url(../font/new/adellesanssagelt-italic-webfont.586d6e41.woff) format("woff"), url(../font/new/adellesanssagelt-italic-webfont.1226ed3c.eot) format("embedded-opentype"), url(../font/new/adellesanssagelt-italic-webfont.b4574917.ttf) format("truetype")
-}
-
-html, body, .container {
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
     height: 100%;
 }
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*html, body, .container {*/
+    /*height: 100%;*/
+/*}*/
 
 hr {
     margin-top: 20px;
@@ -231,6 +239,12 @@ p, li, ul {
     opacity: 1;
 }
 
+.container-img img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
 .text {
     background-color: rgba(75, 76, 78, 0.81);
     color: white;
@@ -324,6 +338,23 @@ p, li, ul {
     opacity: 1;
 }
 
+@media (max-width: 768px) { .navbar-brand {margin-left:20px;} .navbar-toggle {margin-right:25px;} #Grid .mix{margin-left:-25px;}}
 
-
-/***/
+.thumbnail {
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.thumbnail > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

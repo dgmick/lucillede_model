@@ -225,7 +225,7 @@ if(!sbi_js_exists){
                         });
 
 
-                        //Fade photos on hover
+                        //Fade photosdd on hover
                         jQuery('#sb_instagram .sbi_photo').each(function(){
                             $sbi_photo = jQuery(this);
                             $sbi_photo.hover(function(){
@@ -241,7 +241,7 @@ if(!sbi_js_exists){
                         });
 
                         //Sort posts by date
-                        //only sort the new posts that are loaded in, not the whole feed, otherwise some photos will switch positions due to dates
+                        //only sort the new posts that are loaded in, not the whole feed, otherwise some photosdd will switch positions due to dates
                         $self.find('#sbi_images .sbi_item.sbi_new').sort(function (a, b) {
                             var aComp = jQuery(a).data('date'),
                                 bComp = jQuery(b).data('date');
@@ -288,7 +288,7 @@ if(!sbi_js_exists){
                         }
 
                         //Add the error message to the page unless the user is displaying multiple ids or hashtags
-                        if(looparray.length < 2) jQuery('#sb_instagram').empty().append( '<p style="text-align: center;">Unable to show Instagram photos</p><div id="sbi_mod_error">' + sbiErrorMsg + sbiErrorDir + '</div>');
+                        if(looparray.length < 2) jQuery('#sb_instagram').empty().append( '<p style="text-align: center;">Unable to show Instagram photosdd</p><div id="sbi_mod_error">' + sbiErrorMsg + sbiErrorDir + '</div>');
                     }
                 });
 

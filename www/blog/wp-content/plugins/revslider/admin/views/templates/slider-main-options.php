@@ -206,7 +206,7 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 					<div id="rs-instagram-settings-wrapper" class="rs-settings-wrapper">
 						<div style="width:50%;display:block;float:left;">
 							<span class="rev-new-label"><?php _e('Slides (max 20)', 'revslider');?></span>
-							<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'instagram-count', '');?>" name="instagram-count" title="<?php _e('Display this number of photos', 'revslider');?>">
+							<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'instagram-count', '');?>" name="instagram-count" title="<?php _e('Display this number of photosdd', 'revslider');?>">
 							<p>
 								<span class="rev-new-label"><?php _e('Cache (sec)', 'revslider');?></span>
 								<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'instagram-transient', '1200');?>" name="instagram-transient" title="<?php _e('Cache the result', 'revslider');?>">
@@ -222,8 +222,8 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 						<div style="width:50%;display:block;float:left;">
 							<span class="rev-new-label"><?php _e('Source', 'revslider');?></span>
 							<select name="instagram-type">
-								<option value="user" title="<?php _e('Display a user\'s public photos', 'revslider');?>" selected <?php //selected(RevSliderFunctions::getVal($arrFieldsParams, 'instagram-type', 'user'), 'user');?>> <?php _e('User Public Photos', 'revslider');?></option>
-								<!--option value="hash" title="<?php _e('Display photos with one special hashtag', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'instagram-type', 'user'), 'hash');?>> <?php _e('Hashtag', 'revslider');?></option-->
+								<option value="user" title="<?php _e('Display a user\'s public photosdd', 'revslider');?>" selected <?php //selected(RevSliderFunctions::getVal($arrFieldsParams, 'instagram-type', 'user'), 'user');?>> <?php _e('User Public Photos', 'revslider');?></option>
+								<!--option value="hash" title="<?php _e('Display photosdd with one special hashtag', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'instagram-type', 'user'), 'hash');?>> <?php _e('Hashtag', 'revslider');?></option-->
 								</select>
 							<div id="instagram_user">
 								<p>
@@ -240,7 +240,7 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 									<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'instagram-hash-tag', '');?>" name="instagram-hash-tag" title="<?php _e('Put in one Instagram Hashtag', 'revslider');?>">
 								</p>
 								<p>
-									<span class="description"><?php _e('Finds the latest photos posted with one certain hashtag (#)', 'revslider');?></span>
+									<span class="description"><?php _e('Finds the latest photosdd posted with one certain hashtag (#)', 'revslider');?></span>
 								</p>
 							</div-->
 						</div>
@@ -249,7 +249,7 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 					<div id="rs-flickr-settings-wrapper" class="rs-settings-wrapper">
 						<div style="width:50%;display:block;float:left;">
 							<span class="rev-new-label"><?php _e('Slides (max 500)', 'revslider');?></span>
-							<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'flickr-count', '');?>" name="flickr-count" title="<?php _e('Display this number of photos', 'revslider');?>">
+							<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'flickr-count', '');?>" name="flickr-count" title="<?php _e('Display this number of photosdd', 'revslider');?>">
 							<p>
 								<span class="rev-new-label"><?php _e('Cache (sec)', 'revslider');?></span>
 								<input type="text" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'flickr-transient', '1200');?>" name="flickr-transient" title="<?php _e('Cache results for x seconds', 'revslider');?>">
@@ -263,10 +263,10 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 						<div style="width:50%;display:block;float:left;">
 							<span class="rev-new-label"><?php _e('Source', 'revslider');?></span>
 							<select name="flickr-type">
-								<option value="publicphotos" title="<?php _e('Display a user\'s public photos', 'revslider');?>" <?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'publicphotos');?>> <?php _e('User Public Photos', 'revslider');?></option>
+								<option value="publicphotos" title="<?php _e('Display a user\'s public photosdd', 'revslider');?>" <?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'publicphotos');?>> <?php _e('User Public Photos', 'revslider');?></option>
 								<option value="photosets" title="<?php _e('Display a certain photoset from a user', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'photosets');?>> <?php _e('User Photoset', 'revslider');?></option>
 								<option value="gallery" title="<?php _e('Display a gallery', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'gallery');?>> <?php _e('Gallery', 'revslider');?></option>
-								<option value="group" title="<?php _e('Display a group\'s photos', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'group');?>> <?php _e('Groups\' Photos', 'revslider');?></option>
+								<option value="group" title="<?php _e('Display a group\'s photosdd', 'revslider');?>"<?php selected(RevSliderFunctions::getVal($arrFieldsParams, 'flickr-type', 'publicphotos'), 'group');?>> <?php _e('Groups\' Photos', 'revslider');?></option>
 							</select>
 							<div id="flickr-publicphotos-url-wrap">
 								<p>

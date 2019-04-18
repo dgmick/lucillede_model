@@ -7,18 +7,14 @@ $titre = "Panneau d'administration ";
 include("includes/config.php");
 include("includes/start.php");
 
-
 echo'
 <div class="big container">';
 if ($id == 0){
-
 
     echo '<p>Vous n\'êtes pas connecté !</p><script>                            
     window.location.href = "index.php";
     </script>';
 }else{
-
-
     echo '<h1 style="text-transform: capitalize">Bienvenue <b>'.$_SESSION['pseudo'].'</b></h1>
     <hr>
     <p>Vous pourrez gérer ici vos fichiers.</p>';
@@ -52,7 +48,6 @@ if ($id == 0){
 
     }
 
-
     echo '<h2>Les entrées existantes</h2>
             <small>Modifiez les entrées en cliquant dessus</small>
                     <table class="entrees">
@@ -60,7 +55,6 @@ if ($id == 0){
                                 <th width="30">N°</th>
                                 <th>Name</th>
                             </tr>';
-
 
     foreach($row as $rows){
         $date = new DateTime();
@@ -83,9 +77,6 @@ if ($id == 0){
 
     echo '</table>
                 <br>';
-
-
-
 
     // AJOUT D'UNE NOUVELLE ENTREE
 
@@ -131,8 +122,6 @@ if ($id == 0){
         <input type="submit" value="Enregistrer">
     </form>
     <hr>
-    
-    
 ';
     function check_file_uploaded_length ($filename)
     {
@@ -140,12 +129,8 @@ if ($id == 0){
     }
 
     if(isset($_POST['name']) AND isset($_FILES['image1'])){
-//        var_dump($_FILES);
         echo '</pre>';
         function moveFile($original, $extension, $taille, $fichier, $filename){
-//            print '<br> FILE NAME: '.$filename;
-//            print '<br> FILE FICHIER: '.$fichier.'<br>';
-//            var_dump($_FILES[$original]);
             echo '<br>';
             $dossier = 'uploads/'.$_POST['name'].'/';
             mkdir($dossier);
@@ -159,19 +144,15 @@ if ($id == 0){
             if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
             {   $fichier = strtr($fichier,'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ','AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
                 $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
-//                if(move_uploaded_file($_FILES[$original]['tmp_name'], $dossier . $fichier)){print 'Upload effectué avec succès !';}else{print 'Echec de l\'upload !';}
-//                foreach ($_FILES[$filename]["error"] as $key => $error) {
-//                    if ($error == UPLOAD_ERR_OK) {
-                        $tmp_name = $_FILES[$original]["tmp_name"];
-                        $filename = $_FILES[$original]["name"];
-//                        print '<br>FINAL FILENAME: '.$filename.' AND TMP: '.$tmp_name;
-                        if(move_uploaded_file($tmp_name, "$dossier/$filename")){
-                            print 'File '. $filename.' has been uploaded !';
-                        }else{
-                            print 'ERROR: File '. $filename.' has not been uploaded !';
+                $tmp_name = $_FILES[$original]["tmp_name"];
+                $filename = $_FILES[$original]["name"];
+                if(move_uploaded_file($tmp_name, "$dossier/$filename")){
+                    print 'File '. $filename.' has been uploaded !';
+                }else{
+                    print 'ERROR: File '. $filename.' has not been uploaded !';
 
-                            return;
-                        }
+                    return;
+                }
 
 
             }else{print $erreur; }
@@ -194,7 +175,7 @@ if ($id == 0){
             $tailleimage1 = filesize($_FILES['image1']['tmp_name']);
             $extensionimage1 = strrchr($_FILES['image1']['name'], '.');
             moveFile('image1', $extensionimage1, $tailleimage1, $fichierimage1, $image1);
-            }
+        }
         if($_FILES['image2']["size"] == 0) {
             $_FILES['image2'] = null;
             $image2 =" ";
@@ -204,7 +185,7 @@ if ($id == 0){
             $tailleimage2 = filesize($_FILES['image2']['tmp_name']);
             $extensionimage2 = strrchr($_FILES['image2']['name'], '.');
             moveFile('image2', $extensionimage2, $tailleimage2, $fichierimage2, $image2);
-            }
+        }
         if($_FILES['image3']["size"] == 0) {
             $_FILES['image3'] = null;
             $image3 =" ";
@@ -214,7 +195,7 @@ if ($id == 0){
             $tailleimage3 = filesize($_FILES['image3']['tmp_name']);
             $extensionimage3 = strrchr($_FILES['image3']['name'], '.');
             moveFile('image3', $extensionimage3, $tailleimage3, $fichierimage3, $image3);
-            }
+        }
         if($_FILES['image4']["size"] == 0) {
             $_FILES['image4'] = null;
             $image4 =" ";
@@ -224,7 +205,7 @@ if ($id == 0){
             $tailleimage4 = filesize($_FILES['image4']['tmp_name']);
             $extensionimage4 = strrchr($_FILES['image4']['name'], '.');
             moveFile('image4', $extensionimage4, $tailleimage4, $fichierimage4, $image4);
-            }
+        }
         if($_FILES['image5']["size"] == 0) {
             $_FILES['image5'] = null;
             $image5 =" ";
@@ -234,7 +215,7 @@ if ($id == 0){
             $tailleimage5 = filesize($_FILES['image5']['tmp_name']);
             $extensionimage5 = strrchr($_FILES['image5']['name'], '.');
             moveFile('image5', $extensionimage5, $tailleimage5, $fichierimage5, $image5);
-            }
+        }
         if($_FILES['image6']["size"] == 0) {
             $_FILES['image6'] = null;
             $image6 =" ";
@@ -244,7 +225,7 @@ if ($id == 0){
             $tailleimage6 = filesize($_FILES['image6']['tmp_name']);
             $extensionimage6 = strrchr($_FILES['image6']['name'], '.');
             moveFile('image6', $extensionimage6, $tailleimage6, $fichierimage6, $image6);
-            }
+        }
         if($_FILES['image7']["size"] == 0) {
             $_FILES['image7'] = null;
             $image7 =" ";
@@ -254,7 +235,7 @@ if ($id == 0){
             $tailleimage7 = filesize($_FILES['image7']['tmp_name']);
             $extensionimage7 = strrchr($_FILES['image7']['name'], '.');
             moveFile('image7', $extensionimage7, $tailleimage7, $fichierimage7, $image7);
-            }
+        }
         if($_FILES['image8']["size"] == 0) {
             $_FILES['image8'] = null;
             $image8 =" ";
@@ -264,7 +245,7 @@ if ($id == 0){
             $tailleimage8 = filesize($_FILES['image8']['tmp_name']);
             $extensionimage8 = strrchr($_FILES['image8']['name'], '.');
             moveFile('image8', $extensionimage8, $tailleimage8, $fichierimage8, $image8);
-            }
+        }
         if($_FILES['image9']["size"] == 0) {
             $_FILES['image9'] = null;
             $image9 =" ";
@@ -274,7 +255,7 @@ if ($id == 0){
             $tailleimage9 = filesize($_FILES['image9']['tmp_name']);
             $extensionimage9 = strrchr($_FILES['image9']['name'], '.');
             moveFile('image9', $extensionimage9, $tailleimage9, $fichierimage9, $image9);
-            }
+        }
         if($_FILES['image10']["size"] == 0) {
             $_FILES['image10'] = null;
             $image10 =" ";
@@ -386,13 +367,6 @@ if ($id == 0){
             moveFile('image20', $extensionimage20, $tailleimage20, $fichierimage20, $image20);
         }
 
-/*
-        $fichier = basename($_FILES['image1']['name']);
-        $taille = filesize($_FILES['image1']['tmp_name']);
-        $extension = strrchr($_FILES['image1']['name'], '.');*/
-
-
-        $name=$_POST['name'];
         $height=$_POST['height'];
         $bust=$_POST['bust'];
         $waist=$_POST['waist'];
@@ -402,8 +376,7 @@ if ($id == 0){
         $shoes=$_POST['shoes'];
 
         $query=$db->prepare('INSERT INTO 2017lucillede_models (name, height, bust, waist, hips, hair, eyes, shoes, image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15,image16,image17,image18,image19,image20) VALUES (:name, :height, :bust, :waist, :hips, :hair, :eyes, :shoes, :image1,:image2,:image3,:image4,:image5,:image6,:image7,:image8,:image9,:image10,:image11,:image12,:image13,:image14,:image15,:image16,:image17,:image18,:image19,:image20)');
-//        $query=$db->prepare('INSERT INTO 2017lucillede_models (name, height, image1) VALUES (:name, :height, :image1)');
-//        name,height,bust,waist,hips,hair,eyes,shoes,image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15,image16,image17,image18,image19,image20,
+
         $query->bindValue(':name', $name, PDO::PARAM_STR);
         $query->bindValue(':height', $height, PDO::PARAM_STR);
         $query->bindValue(':bust', $bust, PDO::PARAM_STR);
@@ -433,35 +406,35 @@ if ($id == 0){
         $query->bindValue(':image19', $image19, PDO::PARAM_STR);
         $query->bindValue(':image20', $image20, PDO::PARAM_STR);
         var_dump($query);
-       if($query->execute(array(
-        'name' => $name,
-        'height' => $height,
-        'bust' => $bust,
-        'waist' => $waist,
-        'hips' => $hips,
-        'hair' => $hair,
-        'eyes' => $eyes,
-        'shoes' => $shoes,
-        'image1' => $image1,
-        'image2' => $image2,
-        'image3' => $image3,
-        'image4' => $image4,
-        'image5' => $image5,
-        'image6' => $image6,
-        'image7' => $image7,
-        'image8' => $image8,
-        'image9' => $image9,
-        'image10' => $image10,
-        'image11' => $image11,
-        'image12' => $image12,
-        'image13' => $image13,
-        'image14' => $image14,
-        'image15' => $image15,
-        'image16' => $image16,
-        'image17' => $image17,
-        'image18' => $image18,
-        'image19' => $image19,
-        'image20' => $image20,
+        if($query->execute(array(
+            'name' => $name,
+            'height' => $height,
+            'bust' => $bust,
+            'waist' => $waist,
+            'hips' => $hips,
+            'hair' => $hair,
+            'eyes' => $eyes,
+            'shoes' => $shoes,
+            'image1' => $image1,
+            'image2' => $image2,
+            'image3' => $image3,
+            'image4' => $image4,
+            'image5' => $image5,
+            'image6' => $image6,
+            'image7' => $image7,
+            'image8' => $image8,
+            'image9' => $image9,
+            'image10' => $image10,
+            'image11' => $image11,
+            'image12' => $image12,
+            'image13' => $image13,
+            'image14' => $image14,
+            'image15' => $image15,
+            'image16' => $image16,
+            'image17' => $image17,
+            'image18' => $image18,
+            'image19' => $image19,
+            'image20' => $image20,
         )))
         {
             echo 'Validé ! <a href="index.php">Cliquez-ici pour valider</a>';

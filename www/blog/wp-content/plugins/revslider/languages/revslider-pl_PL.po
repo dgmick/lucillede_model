@@ -4074,7 +4074,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:113 ..
 #: admin/views/templates/slider-main-options.php:134
-msgid "Display this number of photos"
+msgid "Display this number of photosdd"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:115 ..
@@ -4126,7 +4126,7 @@ msgid ""
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:144
-msgid "Display a user's public photos"
+msgid "Display a user's public photosdd"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:144
@@ -4146,7 +4146,7 @@ msgid "Display a gallery"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:147
-msgid "Display a group's photos"
+msgid "Display a group's photosdd"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:147

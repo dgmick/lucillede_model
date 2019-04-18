@@ -10,117 +10,144 @@ include('admin/includes/config.php');
     $req = $db->prepare("SELECT * FROM 2017lucillede_models WHERE name='$name'");
     $req->execute();
     $row = $req->fetchAll();
-
     $row = $row[0];
+    if (isset($_GET['model'])) {
+        echo '<div class="header">
+  <h2>' . $row['name'] . '</h2>
+</div>
 
-    if (isset($name)) {
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">';
         for ($i = 1; $i < 20; $i++) {
-            if ($row['image' . $i] !== "") {
+            if ($row['image' . $i] !== " ") {
                 if ($i == 1) {
-                    echo '
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                    <div class="container-fluid">
-                        <div class="model-tittle">MEASUREMENTS</div>
-                        <hr width="50%"/>
-                            <ul class="model-tittle" style="list-style-type: none">
-                                <li>height: ' . $row['height'] . '</li>
-                                <li>waist: ' . $row['waist'] . '</li>
-                                <li>bust: ' . $row['bust'] . '</li>
-                                <li>hips: ' . $row['hips'] . '</li>
-                                <li>hair: ' . $row['hair'] . '</li>
-                                <li>eyes: ' . $row['eyes'] . '</li>
-                                <li>shoes: ' . $row['shoes'] . '</li><br>
-                            </ul>
+                    echo '<div class="container-fluid">
+                                <h3 class="model-tittle">Portfolio</h3>
+                          <div class="col-md-10 col-md-offset-1"  id="model' . $i . '">
+                            <div class="img-holder col-md-4 col-md-offset-2 text-uppercase flex-center flex-column">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">
                             </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="container-fluid">
-                                <div class="model-tittle">Model</div>
-                                <div class="col-md-10 col-md-offset-1 container"  id="model' . $i . '">
-                                    <hr width="50%"/>
-                                    <img src="venum.png" class="img-responsive center" alt="model" style="width: 50%">
-                                    <p class="model-tittle">' . $row['name'] . '</p><br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>';
-
-                    echo '<div class="row">
-                            <div class="col-sm-12">
-                                <div class="card">
-                                    <div class="container-fluid">
-                                        <div class="model-tittle">Portfolio</div>
-                                        <hr width="50%" />
-                                            <div align="center">
-                                                <div class="mySlides">
-                                                        <img src="venum.png" style="width:25%" alt="model">
-                                                </div>
-                                            </div>
-                          <!-- Next and previous buttons -->
-                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                          <a class="next" onclick="plusSlides(1)">&#10095;</a>                        
-                          <!-- Image text -->
-                          <div class="caption-container">
-                            <p id="caption"></p>
-                          </div>                      
-                          <!-- Thumbnail images -->
-                          <div class="row">
-                            <div class="column">
-                          <img class="demo cursor" src="venum.png" style="width:100%" onclick="currentSlide(1)" alt="' . $row['name'] . '">
-                            </div>
-                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>';
+                          </div></div>
+                          ';
+                }
+                if ($i % 2 == 0) {
+                    $i2 = $i + 1;
+                    echo '<div class="container-fluid">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="img-holder col-md-4 col-md-offset-2" id="model' . $i . '">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">
+                            </div>';
+                    if ($row['image' . $i2] !== " ") {
+                        echo '
+                            <div class="img-holder col-md-4" id="model' . $i2 . '">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i2] . '" class="img-responsive img-center" alt="model">
+                            </div>';
+                    }
+                    echo ' </div></div>';
                 }
             }
         }
+        echo '</div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="admin/uploads/' . $row['name'] . '/' . $row['image1'] . '" class="img-responsive center" alt="model" style="width: 100%">
+      <h3 class="model-tittle">' . $row['name'] . '</h3>
+    </div>
+    
+    
+    <div class="card">
+      <h3 class="model-tittle">MEASUREMENTS</h3>
+      <ul style="list-style-type: none;">
+        <li>height: ' . $row['height'] . '</li>
+        <li>waist: ' . $row['waist'] . '</li>
+        <li>bust: ' . $row['bust'] . '</li>
+        <li>hips: ' . $row['hips'] . '</li>
+        <li>hair: ' . $row['hair'] . '</li>
+        <li>eyes: ' . $row['eyes'] . '</li>
+        <li>shoes: ' . $row['shoes'] . '</li><br>
+        </ul>
+    </div>
+    </div>
+    
+    
+  </div>
+</div>';
     }
     ?>
-
 </div>
-<script src="js/bootstrap.min.js"></script>
-
 
 <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+    function gallery(images) {
+        function isOdd(num) {
+            return num % 2;
+        }
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+        if (images) {
+            for (var i = 1; i < images.length; i++) {
+                $("#model" + (i + 1)).hide();
+
+                if (i == 1) {
+                    $('#model1').click(function () {
+                        $('#model1').toggle();
+                        $('#model2').show();
+                        $('#model3').show();
+                    });
+                }
+                if (isOdd(i) == 0) {
+                    (function (j) {
+                        console.log(i, 'odd')
+                        $("#model" + j).click(function () {
+                            console.log(j, '->', (j - 1), (j - 2))
+                            $("#model" + (j - 2)).show();
+                            $("#model" + (j - 1)).show();
+                            $("#model" + (j)).toggle();
+                            $("#model" + (j + 1)).toggle();
+                        });
+                        $("#model" + (j + 1)).click(function () {
+                            console.log(j, '->', (j + 1), (j + 2))
+                            $("#model" + (j + 2)).show();
+                            $("#model" + (j + 3)).show();
+                            $("#model" + (j + 1)).toggle();
+                            $("#model" + (j)).toggle();
+                        });
+
+                    })(i)
+                }
+            }
+            var fingallerie = images.length
+            $('#model' + fingallerie).click(function () {
+                console.log('fin gallerie')
+                $('#model' + fingallerie).toggle();
+                $('#model' + (fingallerie - 1)).show();
+                $('#model' + (fingallerie - 2)).show();
+            });
+        }
     }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {
-            slideIndex = 1
+    var images = [
+        <?php
+        $req = $db->prepare('SELECT * FROM 2017lucillede_models');
+        $req->execute();
+        $rows = $req->fetchAll();
+        foreach ($rows as $row) {
+            if (isset($_GET['model'])) {
+                $row['name'] = preg_replace('/\s+/', '', $row['name']);
+                $_GET['model'] = preg_replace('/\s+/', '', $_GET['model']);
+                if ($row['name'] == $_GET['model']) {
+                    for ($i = 1; $i < 20; $i++) {
+                        if ($row['image' . $i] !== " ") {
+                            echo '"' . $row['image' . $i] . '", ';
+                        }
+                    }
+                }
+            }
         }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
+        ?>
+    ];
+    gallery(images)
 </script>
+
+<script src="js/bootstrap.min.js"></script>

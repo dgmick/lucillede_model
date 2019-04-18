@@ -16,6 +16,7 @@
 <nav class="menu">
     <ul>
         <a href="index.php"><li>Accueil</li></a>
+        <a href="add_news.php"><li>Creation de News</li></a>
         <a href="<?php echo SITE_URL; ?>/"><li>Catalogue</li></a>
         <a href="logout.php"><li>Déconnexion</li></a>
     </ul>
