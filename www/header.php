@@ -22,7 +22,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="Lucille Delabarre, Talent & Model Agent">
@@ -77,8 +77,8 @@
         </div>
         <ul class="nav navbar-nav nav-menu">
             <!--            <li class="active"><a href="http://lucillede.com">MAIN BOARD</a></li>-->
-            <li class="active"><a href="index.php">MAIN BOARD</a></li>
-            <li class="active"><a href="models.php">Models</a></li>
+            <li class="active"><a href="index.php">NEWS</a></li>
+            <li class="active"><a href="models.php">MODELS</a></li>
             <li class="active"><a href="be-discovered.php">BE DISCOVERED</a></li>
             <li class="active"><a href="contact.php">CONTACT</a></li>
         </ul>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
 <head>
     <?php
-    include("./constants.php");
+    include("constants.php");
 
     //Si le titre est indiqué, on l'affiche entre les balises <title>
     echo (!empty($titre))?'<title>'.$titre.'</title>':'<title> Admin Lucillede</title>';
@@ -10,7 +10,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/bootstrap.css" />
     <link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css" />
+    <script src="js/jquery.js"></script>
 </head>
 <!-- CE SITE A BESOIN DE JAVASCRIPT POUR FONCTIONNER CORRECTEMENT-->
 <nav class="menu">

@@ -1,5 +1,4 @@
 <?php
-define('SITE_URL', 'localhost:8888/lucillede');
 define('VISITEUR',1);
 define('INSCRIT',2);
 define('MODO',3);

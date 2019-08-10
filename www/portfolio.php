@@ -13,8 +13,9 @@ include('admin/includes/config.php');
     $row = $row[0];
     if (isset($_GET['model'])) {
         echo '<div class="header">
-  <h2>' . $row['name'] . '</h2>
-</div>
+                  <button type="button" class="btn btn-secondary" onclick="history.go(-1)">Retour sur la page du Model</button>
+                  <h2 class="model_nom" style="text-align: center">' . $row['name'] . '</h2>
+              </div>
 
 <div class="row">
   <div class="leftcolumn">
@@ -23,10 +24,9 @@ include('admin/includes/config.php');
             if ($row['image' . $i] !== " ") {
                 if ($i == 1) {
                     echo '<div class="container-fluid">
-                                <h3 class="model-tittle">Portfolio</h3>
                           <div class="col-md-10 col-md-offset-1"  id="model' . $i . '">
-                            <div class="img-holder col-md-4 col-md-offset-2 text-uppercase flex-center flex-column">
-                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">
+                            <div class="img-holder col-md-8 col-md-offset-2 text-uppercase flex-center flex-column">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive" alt="model">
                             </div>
                           </div></div>
                           ';
@@ -35,13 +35,13 @@ include('admin/includes/config.php');
                     $i2 = $i + 1;
                     echo '<div class="container-fluid">
                         <div class="col-md-10 col-md-offset-1">
-                            <div class="img-holder col-md-4 col-md-offset-2" id="model' . $i . '">
-                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive img-center" alt="model">
+                            <div class="img-holder col-md-8" id="model' . $i . '">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i] . '" class="img-responsive" alt="model">
                             </div>';
                     if ($row['image' . $i2] !== " ") {
                         echo '
-                            <div class="img-holder col-md-4" id="model' . $i2 . '">
-                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i2] . '" class="img-responsive img-center" alt="model">
+                            <div class="img-holder col-md-8" id="model' . $i2 . '">
+                                <img style="cursor: pointer" src="admin/uploads/' . $row['name'] . '/' . $row['image' . $i2] . '" class="img-responsive" alt="model">
                             </div>';
                     }
                     echo ' </div></div>';
@@ -49,29 +49,29 @@ include('admin/includes/config.php');
             }
         }
         echo '</div>
-    
+
   </div>
   <div class="rightcolumn">
-    <div class="card">
+  <div class="card">
       <img src="admin/uploads/' . $row['name'] . '/' . $row['image1'] . '" class="img-responsive center" alt="model" style="width: 100%">
-      <h3 class="model-tittle">' . $row['name'] . '</h3>
-    </div>
-    
+  </div>
     
     <div class="card">
-      <h3 class="model-tittle">MEASUREMENTS</h3>
-      <ul style="list-style-type: none;">
-        <li>height: ' . $row['height'] . '</li>
-        <li>waist: ' . $row['waist'] . '</li>
-        <li>bust: ' . $row['bust'] . '</li>
-        <li>hips: ' . $row['hips'] . '</li>
-        <li>hair: ' . $row['hair'] . '</li>
-        <li>eyes: ' . $row['eyes'] . '</li>
-        <li>shoes: ' . $row['shoes'] . '</li><br>
-        </ul>
-    </div>
-    </div>
-    
+  <h3 class="model_nom" style="text-align: center">MEASUREMENTS</h3>
+  <hr width="50%"/>
+                <ul class="liste-style" style="list-style-type: none;">
+                    <li>height: <p>' . $row['height'] . '</p></li>
+                    <li>waist: <p>' . $row['waist'] . '</p></li>
+                    <li>bust: <p>' . $row['bust'] . '</p></li>
+                    <li>hips: <p>' . $row['hips'] . '</p></li>
+                    <li>hair: <p>' . $row['hair'] . '</p></li>
+                    <li>eyes: <p>' . $row['eyes'] . '</p></li>
+                    <li>shoes: <p>' . $row['shoes'] . '</p></li><br>
+                </ul>
+                  </div>
+  <!---End RightColumn--->  
+  </div> 
+  </div>
     
   </div>
 </div>';
@@ -84,7 +84,6 @@ include('admin/includes/config.php');
         function isOdd(num) {
             return num % 2;
         }
-
         if (images) {
             for (var i = 1; i < images.length; i++) {
                 $("#model" + (i + 1)).hide();

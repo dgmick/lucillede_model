@@ -29,13 +29,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `news` (
  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `user_id` int(11) DEFAULT NULL,
-  `titre` varchar(25) NOT NULL,
+  `titre` varchar(50) NOT NULL,
+  `sous_titre` varchar(50) NOT NULL,
   `date` date NOT NULL,
   `commentaire` text NOT NULL,
-  `photo` varchar(255),
-  FOREIGN KEY (`user_id`) REFERENCES `2017lucillede_models` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  `image_id` int(11) DEFAULT NULL,
+  FOREIGN KEY (`user_id`) REFERENCES `2017lucillede_models` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (`image_id`) REFERENCES `image_news` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
+
+CREATE TABLE `image_news` (
+ `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(250) NOT NULL,
+  `news_id` int(11) DEFAULT NULL,
+  FOREIGN KEY (`news_id`) REFERENCES `news` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 --
 -- Structure de la table `posts`
 --
@@ -55,11 +64,11 @@ INSERT INTO `posts` (`id`, `title`, `description`, `date_creation`) VALUES
 (1, 'Horaires', 'Contenu', '2016-01-10'),
 (2, 'Lol', 'lol', NULL),
 (3, 'Honoraires', '10€', '2016-10-10'),
-(4, 'test', 'test', '0000-00-00'),
-(5, 'test', 'test', '0000-00-00'),
+(4, 'test test', 'test test', '0000-00-00'),
+(5, 'test test', 'test test', '0000-00-00'),
 (6, 'Date de la rentrÃ©es', 'A1 lundi, A2 mardi', '0000-00-00'),
 (7, 'Vacances', 'Voila, c''est la fin', '0000-00-00'),
-(8, 'test', 'test', '0000-00-00');
+(8, 'test test', 'test test', '0000-00-00');
 
 -- --------------------------------------------------------
 

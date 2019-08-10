@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `2017lucillede_models` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `name` text NOT NULL,
   `height` varchar(255) NOT NULL,
   `bust` varchar(255) NOT NULL,
