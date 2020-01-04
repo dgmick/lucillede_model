@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="icon" type="image/png" href="img/logo.jpg"/>
+    <link rel="icon" type="image/png" href="img/logo.ico"/>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yut5cpj.css">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="Lucille Delabarre, Talent & Model Agent">
@@ -59,6 +60,7 @@
     <meta property="og:description"
           content="Discover the books of Lucille's Talents and Models. Model Agent based in Paris, France.">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,7 +75,7 @@
 <nav class="navbar navbar-main">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/"><img height="40" class="logoimg" src="img/logo.png"></a>
+            <a class="navbar-brand" href="/"><img height="50" width="110" class="logoimg" src="img/logo.jpg" alt="logo"></a>
         </div>
         <ul class="nav navbar-nav nav-menu">
             <!--            <li class="active"><a href="http://lucillede.com">MAIN BOARD</a></li>-->

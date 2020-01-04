@@ -22,24 +22,23 @@ $rows = $request->fetchAll();
 ?>
 
 <div class="container">
-    <br>
-    <div class="model-tittle"><?php echo $row['titre']; ?><br>
+    <div class="model-tittle"><?php echo strtoupper($row['titre']); ?><br>
         <a href="model.php?model=<?php echo $user['name']; ?>" class="redirect_btn">Page du Model</a>
     </div>
-    <hr width="50%"/>
+    <hr>
     <div class="row">
-        <p class="model-tittle" style="font-size: 20px !important"><?php echo $row['sous_titre']; ?></p><br>
+        <p class="model-tittle" style="font-size: 20px !important"><?php echo strtoupper($row['sous_titre']); ?></p><br>
         <?php foreach ($rows as $name): ?>
             <div class="col-md-12">
-                <img class="center-img" src="<?php echo SITE_URL; ?>/admin/photos/<?php echo $row['titre']; ?>/<?php echo $name['name']; ?>">
+                <img class="center-img" src="<?php echo SITE_URL; ?>/admin/photos/<?php echo $row['titre']; ?>/<?php echo $name['name']; ?>" alt="<?php echo $name['name']; ?>">
             </div>
         <?php endforeach; ?>
     </div>
     <br>
     <div class="row">
-        <p class="model-tittle" style="font-size: 20px !important"><?php echo $row['commentaire']; ?></p><br>
+        <p class="model-tittle" style="font-size: 20px !important"><?php echo strtoupper($row['commentaire']); ?></p><br>
         <p class="model-tittle" style="font-size: 10px !important; text-align: left">
-            Création: <?php echo $row['date']; ?></p>
+            Création: <?php echo strtoupper($row['date']); ?></p>
     </div>
 </div>
 

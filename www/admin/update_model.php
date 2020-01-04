@@ -49,7 +49,6 @@ if (isset($_GET['titre'])) {
 }
 
 if (isset($_POST['envoyer'])) {
-
     function moveFile($original, $extension, $taille, $fichier, $filename) {
         echo '<br>';
         $dossier = 'uploads/' . $_POST['name'] . '/';
@@ -385,7 +384,7 @@ if (isset($_POST['envoyer'])) {
                     <p>
                         <?php if ($users['image' . $i] != " "): ?>
                             <img src="<?php echo SITE_URL; ?>/admin/uploads/<?php echo $users['name']; ?>/<?php echo $users['image' . $i]; ?>"
-                                 style="width=100%" class="img-responsive center">
+                                 style="width=100%" class="img-responsive center" alt="'<?php echo $users['name']; ?>'">
                             <input type="file" name="image<?php echo $i; ?>" accept="application/image">
                         <?php endif; ?>
                     </p>

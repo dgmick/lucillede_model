@@ -155,16 +155,18 @@ if (isset($_GET['deleteID'])) {
 
 <script>
     function addFields() {
-        var number = document.getElementById("photo").value;
-        var addField = document.getElementById("addField");
+        const number = document.getElementById("photo").value;
+        const addField = document.getElementById("addField");
+
         while (addField.hasChildNodes()) {
             addField.removeChild(addField.lastChild);
         }
-        for (i = 0; i < number; i++) {
+
+        for (let i = 0; i < number; i++) {
             addField.appendChild(document.createTextNode("Image " + (i + 1) + ":"));
-            var input = document.createElement("input");
+            const input = document.createElement("input");
             input.type = "file";
-            if (input.type = "file") {
+            if (input.type === "file") {
                 input.name = "images[]";
             }
             addField.appendChild(input);

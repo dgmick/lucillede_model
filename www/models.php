@@ -17,9 +17,10 @@ include('admin/includes/config.php');
         echo '
             <div class="col-md-4">
             <a href="model.php?model=' . $row['name'] . '">
-            <img src="admin/uploads/' . $row['name'] . '/' . $row['image1'] . '" class="img-responsive" alt="model">
-                <p class="model_nom">' . $row['name'] . '</p>
-                <br>
+            <img 
+            src="admin/uploads/' . $row['name'] . '/' . $row['image1'] . '"
+             class="img-responsive img-style" alt="model">
+                <p class="model_nom">' . strtoupper($row['name']) . '</p>
             </a>
             </div>';
     }

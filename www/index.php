@@ -40,9 +40,11 @@ $rows = $req->fetchAll();
     <?php endif;?>
     <div class="col-md-4">
         <a href="news.php?titre=<?php echo $row['titre'];?>">
-            <img src="admin/photos/<?php echo $row['titre'];?>/<?php echo $image;?>" class="img-responsive" style="width: 250px; align-content: center">
-            <p class="model-tittle" style="font-size: 20px !important; text-align: left; color: black"><?php echo $row['titre'];?></p>
-            <p class="model-tittle" style="font-size: 15px !important; text-align: left; color: black"><?php echo $row['sous_titre'];?></p>
+            <img src="admin/photos/<?php echo $row['titre'];?>/<?php echo $image;?>"
+                 class="img-responsive img-style"
+                 alt="<?php echo $row['titre'];?>">
+            <p class="model-tittle" style="font-size: 20px !important; text-align: left; color: black"><?php echo strtoupper($row['titre']);?></p>
+            <p class="model-tittle" style="font-size: 15px !important; text-align: left; color: black"><?php echo strtoupper($row['sous_titre']);?></p>
             <br>
             <br>
         </a>

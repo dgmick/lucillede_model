@@ -66,7 +66,7 @@ if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
             $_SESSION['id'] = $data['id'];
             $message = 'Bienvenue '.$data['useradmin'].', vous êtes maintenant connecté.</p>
 			<p>Vous allez être redirigé vers la page d\'administration !</p>
-			<img src=http://i.giphy.com/41KuZ0xnx7Bde.gif" height="50">';
+			<img src=http://i.giphy.com/41KuZ0xnx7Bde.gif" height="50" alt="img">';
             echo'<script>
                     window.setTimeout(function(){
                     
