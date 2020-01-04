@@ -36,7 +36,7 @@ $row = $row[0];
 
 <script>
     function myFunction(imgs) {
-        const expandImg = document.getElementById("expandedImg");
+        const expandImg = document.getEementById("expandedImg");
         expandImg.src = imgs.src;
         expandImg.parentElement.style.display = "block";
     }
