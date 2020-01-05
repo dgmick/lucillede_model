@@ -306,77 +306,95 @@ if (isset($_POST['envoyer'])) {
         <div class="row">
             <div class="col-sm-8">
                 <input type="hidden" name="id_model" value="<?php echo $id_model; ?>">
-                <input type="text" name="name" value="<?php echo $name; ?>"><br>
-                <input type="text" name="height" value="<?php echo $height; ?>"><br>
-                <input type="text" name="bust" value="<?php echo $bust; ?>"><br>
-                <input type="text" name="waist" value="<?php echo $waist; ?>"><br>
-                <input type="text" name="hips" value="<?php echo $hips; ?>"><br>
-                <input type="text" name="hair" value="<?php echo $hair; ?>"><br>
-                <input type="text" name="eyes" value="<?php echo $eyes; ?>"><br>
-                <input type="text" name="shoes" value="<?php echo $shoes; ?>"><br>
+                <label>
+                    <input type="text" name="name" value="<?php echo $name; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="height" value="<?php echo $height; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="bust" value="<?php echo $bust; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="waist" value="<?php echo $waist; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="hips" value="<?php echo $hips; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="hair" value="<?php echo $hair; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="eyes" value="<?php echo $eyes; ?>">
+                </label><br>
+                <label>
+                    <input type="text" name="shoes" value="<?php echo $shoes; ?>">
+                </label><br>
                 <h3>Instagram</h3>
-                <input type="text" name="category" value="<?php echo $instagram; ?>"><br>
+                <label>
+                    <input type="text" name="category" value="<?php echo $instagram; ?>">
+                </label><br>
                 <h3>Images</h3>
                 <?php if ($image1 == " "): ?>
                     #1<input type="file" name="image1" id="image1" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image2 == " "): ?>
                     #2<input type="file" name="image2" id="image2" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image3 == " "): ?>
                     #3<input type="file" name="image3" id="image3" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image4 == " "): ?>
                     #4<input type="file" name="image4" id="image4" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image5 == " "): ?>
                     #5<input type="file" name="image5" id="image5" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image6 == " "): ?>
                     #6<input type="file" name="image6" id="image6" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image7 == " "): ?>
                     #7<input type="file" name="image7" id="image7" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image8 == " "): ?>
                     #8<input type="file" name="image8" id="image8" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image9 == " "): ?>
                     #9<input type="file" name="image9" id="image9" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image10 == " "): ?>
                     #10<input type="file" name="image10" id="image10" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image11 == " "): ?>
                     #11<input type="file" name="image11" id="image11" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image12 == " "): ?>
                     #12<input type="file" name="image12" id="image12" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image13 == " "): ?>
                     #13<input type="file" name="image13" id="image13" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image14 == " "): ?>
                     #14<input type="file" name="image14" id="image14" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image15 == " "): ?>
                     #15<input type="file" name="image15" id="image15" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image16 == " "): ?>
                     #16<input type="file" name="image16" id="image16" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image17 == " "): ?>
                     #17<input type="file" name="image17" id="image17" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image18 == " "): ?>
                     #18<input type="file" name="image18" id="image18" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image19 == " "): ?>
                     #19<input type="file" name="image19" id="image19" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <?php if ($image20 == " "): ?>
                     #20<input type="file" name="image20" id="image20" accept="application/image">
-                <? endif; ?>
+                <?php endif; ?>
                 <input type="hidden" name="MAX_FILE_SIZE" value="50000000"><br>
             </div>
             <div class="col-sm-4">
@@ -395,4 +413,3 @@ if (isset($_POST['envoyer'])) {
     </form>
     <hr>
 </div>
-

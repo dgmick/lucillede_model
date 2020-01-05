@@ -367,6 +367,11 @@ if (isset($_POST['name'])) {
     window.location.href = "index.php";
     </script>';
     } else {
+        if ($_SESSION['pseudo'] === null)
+        {
+            header('Location:index.php');
+            exit;
+        }
         echo '
     <h1 style="text-transform: capitalize">Bienvenue <b>' . $_SESSION['pseudo'] . '</b></h1>
     <p>Vous pourrez gérer ici vos fichiers.</p>';
@@ -388,12 +393,12 @@ if (isset($_POST['name'])) {
     <small>Modifiez les entrées en cliquant dessus</small>
     <table class="entrees">
         <tr>
-            <th width="30">N°</th>
+            <th style="width=30px">N°</th>
             <th>Name</th>
             <th>Modification</th>
             <th>Suppression</th>
         </tr>
-        <?php foreach ($row as $rows):; ?>
+        <?php foreach ($row as $rows): ?>
             <tr>
                 <td><p><?php echo $rows['id']; ?></p></td>
                 <td><p><?php echo $rows['name']; ?></p></td>

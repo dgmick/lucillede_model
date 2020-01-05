@@ -146,7 +146,7 @@ if (isset($_GET['highlight_id'])) {
                         <?php if (isset($image['name'])): ?>
                             <p>
                                 <img src="<?php echo SITE_URL; ?>/admin/photos/<?php echo $row['titre']; ?>/<?php echo $image['name']; ?>"
-                                     style="width=100%" class="img-responsive center" alt="<?php echo $users['name']; ?>">
+                                     style="width=100%" class="img-responsive center" alt="<?php echo $image['name']; ?>">
                                 <input type="file" name="image[]" accept="application/image">
                                 <a href="?delete_image=<?php echo $image['id']; ?>"> Supprimer l'image</a>
                                 <a href="?highlight_id=<?php echo $image['id']; ?>&titre=<?php echo $_GET['titre']; ?>">Mettre

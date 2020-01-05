@@ -8,7 +8,7 @@ include('admin/includes/config.php');
 
         <h3>For Any Enquiries <a href="mailto:contact@lucillede.com">contact@lucillede.com</a></h3>
         <h5 style="font-size: 9px !important">
-            Website developed by <a href="https://dgmick.alwaysdata.net" target="_blank">Mickael Lutin</a> & <a href="http://timothee.pro" target="_blank">Timothée Dorand</a></h5>
+            Website developed by <a href="https://dgmick.alwaysdata.net" target="_blank">Mickael Lutin</a></h5>
     </div>
 </div>
 <!-- Bootstrap Core JavaScript -->
