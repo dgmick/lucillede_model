@@ -24,6 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/yut5cpj.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Dublin Core -->
     <meta name="DC.title" content="Lucille Delabarre, Talent & Model Agent">
@@ -68,6 +69,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </head>
 

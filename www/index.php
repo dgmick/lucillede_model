@@ -66,6 +66,3 @@ $rows = $req->fetchAll();
         </nav>
     </div>
 </div>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
