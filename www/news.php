@@ -30,7 +30,20 @@ $rows = $request->fetchAll();
         <p class="model-tittle" style="font-size: 20px !important"><?php echo strtoupper($row['sous_titre']); ?></p><br>
         <?php foreach ($rows as $name): ?>
             <div class="col-md-12">
-                <img class="center-img" src="<?php echo SITE_URL; ?>/admin/photos/<?php echo $row['titre']; ?>/<?php echo $name['name']; ?>" alt="<?php echo $name['name']; ?>">
+                <img
+                        class="center-img modal-hover-opacity"
+                        src="<?php echo SITE_URL; ?>/admin/photos/<?php echo $row['titre']; ?>/<?php echo $name['name']; ?>"
+                        alt="<?php echo $name['name']; ?>"
+                        onclick="onClick(this)"
+                        style="cursor: pointer"
+                >
+
+                <div id="modalId" class="modal" onclick="this.style.display='none'">
+                    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <div class="modal-content">
+                        <img id="modalImg" class="img-modal-style">
+                    </div>
+                </div>
             </div>
         <?php endforeach; ?>
     </div>
@@ -41,6 +54,3 @@ $rows = $request->fetchAll();
             Création: <?php echo strtoupper($row['date']); ?></p>
     </div>
 </div>
-
-<script src="js/bootstrap.min.js"></script>
-

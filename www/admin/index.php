@@ -37,9 +37,9 @@ if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
 	<div class="container">';
     echo '<small class="align-left">Dernier fichier envoyé :)</small>';
 
-    $last_post = end($row);
-
-    echo '<h2>'.$last_post['title'].'</h2><p class="align-left">'.$last_post['description'].'</p>';
+//    $last_post = end($row);
+//
+//    echo '<h2>'.$last_post['title'].'</h2><p class="align-left">'.$last_post['description'].'</p>';
 
     echo'
 	</div>

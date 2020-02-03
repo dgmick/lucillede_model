@@ -367,11 +367,6 @@ if (isset($_POST['name'])) {
     window.location.href = "index.php";
     </script>';
     } else {
-        if ($_SESSION['pseudo'] === null)
-        {
-            header('Location:index.php');
-            exit;
-        }
         echo '
     <h1 style="text-transform: capitalize">Bienvenue <b>' . $_SESSION['pseudo'] . '</b></h1>
     <p>Vous pourrez gérer ici vos fichiers.</p>';
